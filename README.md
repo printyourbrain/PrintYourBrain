@@ -6,12 +6,16 @@ Contains all documentations regarding print your brain pipelines, software insta
 
 ## Folders and information : 
 
-1. Installation guide :
+---
+
+### Installation :
 
 This folder contains the installation steps for all softwares required to generate a printable 3D image of our fmri data. 
 
-### Contains: 
+#### Contains: 
 
-1. ***installation_linux.md:*** Installation guide for linux operating system (ubuntu 20.04).  
+   1. ***installation_linux.md:*** Installation guide for linux operating system (ubuntu 20.04).  
+
+---
 
 ---
