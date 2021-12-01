@@ -1,0 +1,12 @@
+[submodule "submodules/data_preparation"]
+	path = submodules/data_preparation
+	url = git@github.com:printyourbrain/data_preparation.git
+[submodule "submodules/artifact_correction"]
+	path = submodules/artifact_correction
+	url = git@github.com:printyourbrain/artifact_correction.git
+[submodule "submodules/brain_part_parcellation"]
+	path = submodules/brain_part_parcellation
+	url = git@github.com:printyourbrain/brain_part_parcellation.git
+[submodule "submodules/trimming_the_3d_brain"]
+	path = submodules/trimming_the_3d_brain
+	url = git@github.com:printyourbrain/trimming_the_3d_brain.git
