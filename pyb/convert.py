@@ -13,5 +13,5 @@ def nii_to_mgz(inputfile, outputfile):
     mc.inputs.in_file = inputfile
     mc.inputs.out_file = outputfile
     mc.inputs.out_type = 'mgz'
-    mc.cmdline
+    print(mc.cmdline)
     mc.run()
