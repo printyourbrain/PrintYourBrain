@@ -130,3 +130,7 @@ dmypy.json
 
 # Mac OS folder info file
 .DS_store
+
+# Data file
+data/
+.nii
