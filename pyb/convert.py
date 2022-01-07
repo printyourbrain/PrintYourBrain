@@ -1,6 +1,12 @@
 """ Utils file for converting file types"""
 
 def nii_to_mgz(inputfile, outputfile):
+    """Converts .nii inputfile to .mgz outputfile
+
+    Args:
+        inputfile (.nii): NIfTI file path
+        outputfile (.mgz): MGZ output path
+    """
     from nipype.interfaces.freesurfer import MRIConvert
     
     mc = MRIConvert()   
