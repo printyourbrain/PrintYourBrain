@@ -35,7 +35,7 @@ def main(argv):
          outputdir = arg
       elif opt in ("-s", "--subj"):
          subject = arg
-   print('Input .NIfTI file is ', inputfile)
+   print('Input NIfTI file is', inputfile)
    print('Output directory is', outputdir)
    
    return inputfile, outputdir, subject
