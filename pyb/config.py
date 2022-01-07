@@ -1,0 +1,1 @@
+subjects_dir = '/home/anujanegi/tj/PrintYourBrain/data'
