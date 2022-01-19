@@ -49,6 +49,6 @@ if __name__ == "__main__":
    if not os.path.exists(subj_directory):
         os.makedirs(subj_directory)
 
-   sub_process('Converting NIfTI file to MGZ')
-   outputfile = os.path.join(subj_directory, subject+'.mgz')
-   nii_to_mgz(inputfile, outputfile)
+   # sub_process('Converting NIfTI file to MGZ')
+   # outputfile = os.path.join(subj_directory, subject+'.mgz')
+   # nii_to_mgz(inputfile, outputfile)
