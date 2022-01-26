@@ -134,3 +134,4 @@ dmypy.json
 # Data file
 data/
 .nii
+.nii.gz
