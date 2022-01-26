@@ -3,7 +3,7 @@
 from nipype.interfaces.freesurfer import ReconAll
 from nipype.interfaces.ants.segmentation import BrainExtraction
 
-from config import template
+from pyb.config import template
 
 # >>> reconall = ReconAll()
 # >>> reconall.inputs.subject_id = 'foo'
@@ -47,9 +47,9 @@ def brain_extraction(T1file, template_name='NKI'):
     brainextraction.inputs.anatomical_image = T1file
     brainextraction.inputs.brain_template = template[str(template_name)]['brain_template']
     brainextraction.inputs.brain_probability_mask = template[str(template_name)]['probablity_mask']
-    brainextraction.inputs.args.o = 'dsd'
+    # brainextraction.inputs.args.o = 'dssd'
     print(brainextraction.cmdline)
-    # brainextraction.run()
+    brainextraction.run()
 
 # antsBrainExtraction.sh -a T1.nii.gz -m ProbabilityMaskOfStudyTemplate.nii.gz
 # -e study_template.nii.gz -d 3 -s nii.gz -o highres001_'
