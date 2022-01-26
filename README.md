@@ -1,23 +1,18 @@
-# Print Your Brain
+## Print Your Brain!
 
-This is the main folder for print your brain.
+### [Website](https://www.ewi-psy.fu-berlin.de/en/v/ccnb/news_events/2021_04_28_Print-your-Brain.html) (new website coming soon xD )
 
----
+![Teaser image](images/print-your-brain_logo_jpeg.jpg)
 
-## Folders and information : 
+*CAUTION*  This repo is a work in progress.
 
----
+This repository contains:
 
-### Installation :
+* important thing 1.
+* important thing 2.
+* even more important thing 3 ;p.
 
-This folder contains the installation guide for all softwares required to generate a printable 3D image of our fmri data. 
+## Setup
 
-#### Contains: 
+Coming Soon!
 
-   1. ***installation_linux.md:*** Installation guide for linux operating system (ubuntu 20.04).  
-
----
-
-### Pipeline:
-
----
