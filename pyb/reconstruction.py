@@ -69,4 +69,4 @@ def brain_extraction(T1file, template_name='NKI'):
 #   -d 3 \
 #   -o ${OUTPUT_DIR}
 
-brain_extraction('data/exampleT1.nii')
+# brain_extraction('data/exampleT1.nii')

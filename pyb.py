@@ -7,6 +7,7 @@ import os
 
 import pyb.config as config
 from pyb.convert import nii_to_mgz
+from pyb.reconstruction import brain_extraction
 
 # setup subjects directory for freesurfer
 os.environ['SUBJECTS_DIR'] = config.subjects_dir
@@ -52,3 +53,7 @@ if __name__ == "__main__":
    # sub_process('Converting NIfTI file to MGZ')
    # outputfile = os.path.join(subj_directory, subject+'.mgz')
    # nii_to_mgz(inputfile, outputfile)
+   
+   sub_process('ANTS brain extraction')
+   brain_extraction(inputfile)
+   
