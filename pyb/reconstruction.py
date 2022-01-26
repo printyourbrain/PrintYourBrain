@@ -5,19 +5,6 @@ from nipype.interfaces.ants.segmentation import BrainExtraction
 
 from pyb.config import template
 
-# >>> reconall = ReconAll()
-# >>> reconall.inputs.subject_id = 'foo'
-# >>> reconall.inputs.directive = 'all'
-# >>> reconall.inputs.subjects_dir = '.'
-# >>> reconall.inputs.T1_files = 'structural.nii'
-# >>> reconall.cmdline
-# 'recon-all -all -i structural.nii -subjid foo -sd .'
-
-# recon-all -s s9400_MS -i s9400_MS.mgz -autorecon1
-# recon-all -skullstrip -wsthresh 5 -clean-bm -subjid s9400_MS
-# recon-all -skullstrip -clean-bm -gcut -subjid s9400_MS
-# recon-all -s s9400_MS -autorecon2 -autorecon3
-
 
 def autorecon1(subject, subject_directory, T1file):
     """Performs the follwing operations-
