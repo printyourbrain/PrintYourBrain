@@ -57,7 +57,14 @@ docker run -it -v /path/to/PrintYourBrain:/PrintYourBrain pyb:latest
 python -m ensurepip --upgrade
 ```
 
-4. Activate the pyb conda environemnt within the container.
+4. Configure your shell and restart it.
+
+```
+conda init bash
+exec bash
+```
+
+5. Activate the pyb conda environemnt within the container.
 
 ```
 conda activate pyb
