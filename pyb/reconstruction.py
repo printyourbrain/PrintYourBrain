@@ -12,7 +12,6 @@ def autorecon1(subject, output_directory, T1file):
         NU (Non-Uniform intensity normalization)
         Talairach transform computation
         Intensity Normalization 1
-        Skull Strip
     """
     autorecon1 = ReconAll()
     autorecon1.inputs.subject_id = subject
@@ -23,9 +22,43 @@ def autorecon1(subject, output_directory, T1file):
     print(autorecon1.cmdline)
     autorecon1.run()
 
-def recon_flow():
-    """Overall recon pipeline"""
-    autorecon1("exampleT1", "data/exampleT1", "data/exampleT1.nii")
+
+def autorecon2_3(subject, output_directory):
+    """Performs the following operations-
+        EM Register (linear volumetric registration)
+        CA Intensity Normalization
+        CA Non-linear Volumetric Registration
+        Remove Neck
+        LTA with Skull
+        CA Label (Volumetric Labeling, ie Aseg) and Statistics
+        Intensity Normalization 2 (start here for control points)
+        White matter segmentation
+        Edit WM With ASeg
+        Fill (start here for wm edits)
+        Tessellation (begins per-hemisphere operations)
+        Smooth1
+        Inflate1
+        QSphere
+        Automatic Topology Fixer
+        Final Surfs (start here for brain edits for pial surf)
+        Smooth2
+        Inflate2
+        Spherical Mapping
+        Spherical Registration
+        Spherical Registration, Contralateral hemisphere
+        Map average curvature to subject
+        Cortical Parcellation - Desikan_Killiany and Christophe (Labeling)
+        Cortical Parcellation Statistics
+        Cortical Ribbon Mask
+        Cortical Parcellation mapping to Aseg
+    """
+    autorecon2_3 = ReconAll()
+    autorecon2_3.inputs.subject_id = subject
+    autorecon2_3.inputs.directive = "autorecon2"
+    autorecon2_3.inputs.args = "-autorecon3"
+    autorecon2_3.inputs.subjects_dir = output_directory
+    print(autorecon2_3.cmdline)
+    autorecon2_3.run()
 
 
 def brain_extraction(T1file, subject_directory, template_name="NKI"):
@@ -40,7 +73,6 @@ def brain_extraction(T1file, subject_directory, template_name="NKI"):
     brainextraction.inputs.brain_probability_mask = template[str(template_name)][
         "probablity_mask"
     ]
-    brainextraction.inputs.out_prefix = subject_directory
+    brainextraction.inputs.out_prefix = subject_directory + "/"
     print(brainextraction.cmdline)
     brainextraction.run()
-
