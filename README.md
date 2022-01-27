@@ -45,11 +45,13 @@ Make sure you have your neurodocker image listed in `docker images`.
 docker build --tag pyb - < pyb.Dockerfile
 ```
 
-2. Run an interative bash in your image.
+2. Run an interative bash in your image, while mounting the PrintYourBrain folder and specifying your Freesurfer license file.
 
 ```
-docker run -it -v /path/to/PrintYourBrain:/PrintYourBrain pyb:latest
+docker run -it -v /path/to/PrintYourBrain:/PrintYourBrain pyb:latest -v /path/to/your/freesurfer/license.txt:/opt/freesurfer-6.0.0-min/license.txt pyb:latest
 ```
+You can get your license file from [here](https://surfer.nmr.mgh.harvard.edu/fswiki/License) incase you don't have one!
+
 
 3. Make sure pip is installed.
 
