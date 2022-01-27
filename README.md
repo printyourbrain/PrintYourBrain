@@ -102,7 +102,9 @@ python -m pip install --upgrade build/
 python -m build
 ```
 
-2. Run the pyb script!
+2. Configure your project and update paths in config.py.
+
+3. Run the pyb script!
 
 ```
 python pyb.py -i <input NIfTI file> -o <output directory name> -s <subject_name>
