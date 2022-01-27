@@ -41,7 +41,7 @@ docker build --tag pyb - < pyb.Dockerfile
 2. Run an interative bash in your image.
 
 ```
-docker run -it pyb:latest
+docker run -it -v /path/to/PrintYourBrain:/PrintYourBrain pyb:latest
 ```
 
 3. Make sure pip is installed.
@@ -76,6 +76,7 @@ Make sure to setup both your freesurfeer and ANTs environment variables are set.
 ```
 git clone https://github.com/printyourbrain/PrintYourBrain.git
 ```
+*If using container, start your docker image at this point!*
 
 2. Change directory.
 
