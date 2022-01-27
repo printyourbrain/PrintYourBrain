@@ -14,7 +14,7 @@ This repository contains:
 
 # Setup
 
-1. Clone the repository.
+1. Either [download](https://github.com/printyourbrain/PrintYourBrain/archive/refs/heads/main.zip) or clone the repository.
 
 ```
 git clone https://github.com/printyourbrain/PrintYourBrain.git
