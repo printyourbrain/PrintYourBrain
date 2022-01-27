@@ -6,7 +6,7 @@ from nipype.interfaces.ants.segmentation import BrainExtraction
 from pyb.config import template
 
 
-def autorecon1(subject, subject_directory, T1file):
+def autorecon1(subject, output_directory, T1file):
     """Performs the follwing operations-
         Motion Correction and Conform
         NU (Non-Uniform intensity normalization)
@@ -17,11 +17,11 @@ def autorecon1(subject, subject_directory, T1file):
     autorecon1 = ReconAll()
     autorecon1.inputs.subject_id = subject
     autorecon1.inputs.directive = "autorecon1"
-    autorecon1.inputs.subjects_dir = subject_directory
+    autorecon1.inputs.flags = "-noskullstrip"
+    autorecon1.inputs.subjects_dir = output_directory
     autorecon1.inputs.T1_files = T1file
     print(autorecon1.cmdline)
     autorecon1.run()
-
 
 def recon_flow():
     """Overall recon pipeline"""
@@ -43,3 +43,4 @@ def brain_extraction(T1file, subject_directory, template_name="NKI"):
     brainextraction.inputs.out_prefix = subject_directory
     print(brainextraction.cmdline)
     brainextraction.run()
+
