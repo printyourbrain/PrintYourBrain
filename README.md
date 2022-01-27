@@ -28,7 +28,7 @@ cd PrintYourBrain
 
 ### For usage in a container
 
-DISCLAIMER: You need ~4GB storage for this.
+DISCLAIMER: You need ~4GB free storage space for this.
 
 #### Pre-Requisites
 
