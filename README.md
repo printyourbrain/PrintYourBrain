@@ -91,6 +91,8 @@ conda activate pyb
 
 # Processing Brain Scans
 
+Now that you are in your docker container or the conda environment, you are ready to start processing your T1w brain images!
+
 1. Build the pyb package.
 
 ```
