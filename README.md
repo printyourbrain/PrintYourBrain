@@ -14,6 +14,18 @@ This repository contains:
 
 # Setup
 
+1. Clone the repository.
+
+```
+git clone https://github.com/printyourbrain/PrintYourBrain.git
+```
+
+2. Change directory.
+
+```
+cd PrintYourBrain
+```
+
 ### For usage in a container
 
 #### Pre-Requisites
@@ -22,13 +34,6 @@ This repository contains:
 * [Neurodocker](https://www.repronim.org/neurodocker/user_guide/installation.html).
 
 Make sure you have your neurodocker image listed in `docker images`.
-
-Docker cheatcodes to copy files in and out of your container-
-
-```
-docker cp src/. container_id:/target
-docker cp container_id:/src/. target
-```
 
 #### Getting Started
 
@@ -69,30 +74,23 @@ You are all set up to process your brain scans now! 🧠🚀
 
 Make sure to setup both your freesurfeer and ANTs environment variables are set.
 
+#### Getting Started
+
+Coming soon!
+`
+conda activate pyb
+`
+
 # Processing Brain Scans
 
-1. Clone the repository.
-
-```
-git clone https://github.com/printyourbrain/PrintYourBrain.git
-```
-*If using container, start your docker image at this point!*
-
-2. Change directory.
-
-```
-cd PrintYourBrain
-```
-
-3. Build the pyb package.
+1. Build the pyb package.
 
 ```
 python -m pip install --upgrade build/
 python -m build
 ```
 
-
-4. Run the pyb script!
+2. Run the pyb script!
 
 ```
 python pyb.py -i <input NIfTI file> -o <output directory name> -s <subject_name>
