@@ -28,6 +28,8 @@ cd PrintYourBrain
 
 ### For usage in a container
 
+DISCLAIMER: You need ~4GB storage for this.
+
 #### Pre-Requisites
 
 * [Docker engine](https://docs.docker.com/engine/install/).
