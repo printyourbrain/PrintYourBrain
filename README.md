@@ -37,7 +37,7 @@ Make sure you have your neurodocker image listed in `docker images`.
 
 #### Getting Started
 
-1. Build the PYB image from this [Dockerfile](https://raw.githubusercontent.com/printyourbrain/PrintYourBrain/main/pyb.Dockerfile).
+1. Build the PYB image from [this](https://raw.githubusercontent.com/printyourbrain/PrintYourBrain/main/pyb.Dockerfile) Dockerfile.
 
 ```
 docker build --tag pyb - < pyb.Dockerfile
@@ -76,10 +76,18 @@ Make sure to setup both your freesurfeer and ANTs environment variables are set.
 
 #### Getting Started
 
-Coming soon!
-`
+1. Creat a conda environment from [this](https://raw.githubusercontent.com/printyourbrain/PrintYourBrain/main/environment.yml) environment file.
+
+```
+conda env create --file environment.yml
+```
+
+2. Start your conda environment.
+
+
+```
 conda activate pyb
-`
+```
 
 # Processing Brain Scans
 
