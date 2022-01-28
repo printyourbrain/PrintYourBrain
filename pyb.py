@@ -7,7 +7,7 @@ import os
 
 import pyb.config as config
 from pyb.convert import nii_to_mgz
-from pyb.reconstruction import brain_extraction
+from pyb.reconstruction import autorecon2_3, brain_extraction, autorecon1
 
 # setup subjects directory for freesurfer
 os.environ["SUBJECTS_DIR"] = config.subjects_dir
@@ -52,14 +52,21 @@ if __name__ == "__main__":
     inputfile, outputdir, subject = main(sys.argv[1:])
     print("Running PYB for subject %s" % subject)
 
-    # create subject dir in the outputs directory
-    subj_directory = os.path.join(outputdir, subject)
-    if not os.path.exists(subj_directory):
-        os.makedirs(subj_directory)
+    # create output dir in the outputs directory
+    if not os.path.exists(outputdir):
+        os.makedirs(outputdir)
+    subject_directory = os.path.join(outputdir, subject)
 
-    # sub_process('Converting NIfTI file to MGZ')
-    # outputfile = os.path.join(subj_directory, subject+'.mgz')
-    # nii_to_mgz(inputfile, outputfile)
+    sub_process("Autorecon1")
+    autorecon1(subject, outputdir, inputfile)
 
     sub_process("ANTS brain extraction")
-    brain_extraction(inputfile, subj_directory)
+    brain_extraction(inputfile, subject_directory)
+
+    sub_process("Converting brainmask NIfTI file to MGZ")
+    brain_mask_path = os.path.join(subject_directory, "BrainExtractionMask.nii.gz")
+    outputfile = os.path.join(subject_directory, "mri", "brainmask.mgz")
+    nii_to_mgz(brain_mask_path, outputfile)
+
+    sub_process("Autorecon 2 and 3")
+    autorecon2_3(subject, outputdir)
