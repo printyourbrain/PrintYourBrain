@@ -104,16 +104,21 @@ conda activate pyb
 
 Now that you are in your docker container or the conda environment, you are ready to start processing your T1w brain images!
 
-1. Build the pyb package.
+1. Change directory.
+```
+cd PrintYourBrain
+```
+
+2. Build the pyb package.
 
 ```
 python -m pip install --upgrade build
 python -m build
 ```
 
-2. Configure your project and update paths in config.py.
+3. Configure your project and update paths in config.py.
 
-3. Run the pyb script!
+4. Run the pyb script!
 
 ```
 python pyb.py -i <input NIfTI file> -o <output directory name> -s <subject_name>
