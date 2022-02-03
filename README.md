@@ -48,7 +48,7 @@ docker build --tag pyb - < pyb.Dockerfile
 2. Run an interative bash in your image, while mounting the PrintYourBrain folder and specifying your Freesurfer license file.
 
 ```
-docker run -it -v /path/to/PrintYourBrain:/PrintYourBrain -v /path/to/your/freesurfer/license.txt:/opt/freesurfer-6.0.0-min/license.txt pyb:latest
+docker run --platform linux/x86_64 -it -v /path/to/PrintYourBrain:/PrintYourBrain -v /path/to/your/freesurfer/license.txt:/opt/freesurfer-6.0.0-min/license.txt pyb:latest
 ```
 You can get your license file from [here](https://surfer.nmr.mgh.harvard.edu/fswiki/License) incase you don't have one!
 
