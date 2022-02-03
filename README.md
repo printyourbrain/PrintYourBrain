@@ -117,7 +117,7 @@ python -m build
 ```
 
 3. *CAUTION:* Configure your project and update paths in [pyb/config.py](https://github.com/printyourbrain/PrintYourBrain/blob/main/pyb/config.py).
-The currect config point to a 'data' folder inside PrintYourBrain directory for all files. Download Brain Templates for ANTs from [here](https://figshare.com/articles/dataset/ANTs_ANTsR_Brain_Templates/915436). The deafult template in the repo is NKI (can obviously be changed!).
+The currect config points to a 'data' folder inside PrintYourBrain directory for all files. Download Brain Templates for ANTs from [here](https://figshare.com/articles/dataset/ANTs_ANTsR_Brain_Templates/915436). The deafult template in the repo is NKI (can obviously be changed!).
 
 4. Run the pyb script!
 
