@@ -57,16 +57,16 @@ if __name__ == "__main__":
         os.makedirs(outputdir)
     subject_directory = os.path.join(outputdir, subject)
 
-    sub_process("Autorecon1")
-    autorecon1(subject, outputdir, inputfile)
+    # sub_process("Autorecon1")
+    # autorecon1(subject, outputdir, inputfile)
 
-    sub_process("ANTS brain extraction")
-    brain_extraction(inputfile, subject_directory)
+    # sub_process("ANTS brain extraction")
+    # brain_extraction(inputfile, subject_directory)
 
-    sub_process("Converting brainmask NIfTI file to MGZ")
-    brain_mask_path = os.path.join(subject_directory, "BrainExtractionMask.nii.gz")
-    outputfile = os.path.join(subject_directory, "mri", "brainmask.mgz")
-    nii_to_mgz(brain_mask_path, outputfile)
+    # sub_process("Converting brainmask NIfTI file to MGZ")
+    # brain_mask_path = os.path.join(subject_directory, "BrainExtractionMask.nii.gz")
+    # outputfile = os.path.join(subject_directory, "mri", "brainmask.mgz")
+    # nii_to_mgz(brain_mask_path, outputfile)
 
     sub_process("Autorecon 2 and 3")
     autorecon2_3(subject, outputdir)
