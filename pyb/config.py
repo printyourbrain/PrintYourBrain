@@ -1,9 +1,9 @@
-subjects_dir = "/PrintYourBrain/data"
+subjects_dir = "data"
 
 template = dict(
     NKI=dict(
-        templte_dir="/PrintYourBrain/data/NKI",
-        brain_template="/PrintYourBrain/data/NKI/T_template.nii.gz",
-        probablity_mask="/PrintYourBrain/data/NKI/T_template_BrainCerebellumProbabilityMask.nii.gz",
+        templte_dir="data/NKI",
+        brain_template="data/NKI/T_template.nii.gz",
+        probablity_mask="data/NKI/T_template_BrainCerebellumProbabilityMask.nii.gz",
     )
 )

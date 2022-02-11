@@ -67,10 +67,8 @@ def brain_extraction(T1file, subject_directory, template_name="NKI"):
     brainextraction = BrainExtraction()
     brainextraction.inputs.dimension = 3
     brainextraction.inputs.anatomical_image = T1file
-    brainextraction.inputs.brain_template = template[str(template_name)][
-        "brain_template"
-    ]
-    brainextraction.inputs.brain_probability_mask = template[str(template_name)][
+    brainextraction.inputs.brain_template = template[template_name]["brain_template"]
+    brainextraction.inputs.brain_probability_mask = template[template_name][
         "probablity_mask"
     ]
     brainextraction.inputs.out_prefix = subject_directory + "/"
