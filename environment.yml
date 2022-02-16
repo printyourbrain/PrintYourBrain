@@ -2,14 +2,7 @@ name: pyb
 channels:
   - defaults
 dependencies:
-  - _libgcc_mutex=0.1=main
-  - _openmp_mutex=4.5=1_gnu
-  - ca-certificates=2021.10.26=h06a4308_2
   - certifi=2020.6.20=pyhd3eb1b0_3
-  - ld_impl_linux-64=2.35.1=h7274673_9
-  - libffi=3.3=he6710b0_2
-  - libgcc-ng=9.3.0=h5101ec6_17
-  - libgomp=9.3.0=h5101ec6_17
   - libstdcxx-ng=9.3.0=hd4cf53a_17
   - ncurses=6.3=h7f8727e_2
   - openssl=1.1.1l=h7f8727e_0
