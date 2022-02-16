@@ -3,18 +3,6 @@ channels:
   - defaults
 dependencies:
   - certifi=2020.6.20=pyhd3eb1b0_3
-  - libstdcxx-ng=9.3.0=hd4cf53a_17
-  - ncurses=6.3=h7f8727e_2
-  - openssl=1.1.1l=h7f8727e_0
-  - pip=21.2.2=py36h06a4308_0
-  - python=3.6.13=h12debd9_1
-  - readline=8.1=h27cfd23_0
-  - setuptools=58.0.4=py36h06a4308_0
-  - sqlite=3.36.0=hc218d9a_0
-  - tk=8.6.11=h1ccaba5_0
-  - wheel=0.37.0=pyhd3eb1b0_1
-  - xz=5.2.5=h7b6447c_0
-  - zlib=1.2.11=h7b6447c_3
   - pip:
     - build==0.7.0
     - charset-normalizer==2.0.10
