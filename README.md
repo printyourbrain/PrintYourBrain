@@ -1,6 +1,13 @@
-## Print Your Brain!
+## [Print Your Brain!](https://printyourbrain.github.io/)
 
-### [Website](https://printyourbrain.github.io/)
+[![GitHub issues](https://img.shields.io/github/issues/printyourbrain/PrintYourBrain.svg)](https://github.com/printyourbrain/PrintYourBrain/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/printyourbrain/PrintYourBrain.svg)](https://github.com/printyourbrain/PrintYourBrain/pulls/)
+[![GitHub contributors](https://img.shields.io/github/contributors/printyourbrain/PrintYourBrain.svg)](https://GitHub.com/printyourbrain/PrintYourBrain/graphs/contributors/)
+[![GitHub Commits](https://github-basic-badges.herokuapp.com/commits/printyourbrain/PrintYourBrain.svg)](https://github.com/printyourbrain/PrintYourBrain/commits/main)
+[![Last Commit](https://img.shields.io/github/last-commit/printyourbrain/PrintYourBrain)](https://github.com/printyourbrain/PrintYourBrain/archive/main.zip)
+[![License](https://img.shields.io/github/license/printyourbrain/PrintYourBrain)](https://github.com/printyourbrain/PrintYourBrain/blob/main/LICENSE)
+
+
 
 ![Teaser image](images/print-your-brain_logo_jpeg.jpg)
 
