@@ -90,7 +90,7 @@ You are all set up to process your brain scans now! 🧠🚀
 * [Fressurfer](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall).
 * [ANTs](https://picsl.upenn.edu/software/ants/).
 
-Make sure to setup both your freesurfeer and ANTs environment variables are set.
+Make sure to setup both your freesurfeer and ANTs environment variables.
 
 #### Getting Started
 
