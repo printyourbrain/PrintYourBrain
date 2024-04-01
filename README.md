@@ -8,10 +8,10 @@
 [![License](https://img.shields.io/github/license/printyourbrain/PrintYourBrain)](https://github.com/printyourbrain/PrintYourBrain/blob/main/LICENSE)
 
 
+# This repository has been archived and is no longer worked on.
 
 ![Teaser image](images/print-your-brain_logo_jpeg.jpg)
 
-*CAUTION*  This repo is a work in progress.
 
 This repository contains:
 
